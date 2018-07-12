@@ -7,8 +7,8 @@ Since the rate of using the Shopify API for *free account* is **2 calls/second**
 1. Get the shop info to get the primary location id. (*used 1 API call*)
 2. Select all distinct categories from the database.
 3. Get all smart collections on the Shopify store. (*used 1 API call for every 250 items*)
-4. Split all categories NOT yet imported to the Shopify store, and use these categories for building rules for the new smart collection -- this will automatically assign the products according to their tags (I assume that the product tag must be equal to all of the split categories). Then, add the new smart collection to the Shopify store. (*used 1 API call for every smart collection added*)
-5. From the database, select all products NOT yet imported to the Shopify store.  
+4. Split all categories NOT yet imported into the Shopify store, and use these categories for building rules for the new smart collection -- this will automatically assign the products according to their tags (I assume that the product tag must be equal to all of the split categories). Then, add the new smart collection to the Shopify store. (*used 1 API call for every smart collection added*)
+5. From the database, select all products NOT yet imported into the Shopify store.  
 6. For each product item in the retrieved products:  
     1. Assume lost Internet connection during the last import, check the first item if it is already added (if it has the same product title). If it is already added, proceed to Substep vii. (*used 1 API call*)   
     2. Assign its product variant info to the new product variant.  
@@ -17,7 +17,7 @@ Since the rate of using the Shopify API for *free account* is **2 calls/second**
     5. Assign the new product image and the new product variant to the new product.  
     6. Add the new product to the Shopify store (*used 1 API call for every product added*).  
     7. Set the new inventory item, and assign the product item quantity, shop primary location id, and product variant inventory item id. (*used 1 API call for every inventory item set*).  
-    8. Insert the added product to the separated table of the database. (I assume this process means that the product is already imported to the Shopify store)
+    8. Insert the added product into the separated table of the database. (I assume this process means that the product is already imported to the Shopify store)
 7. Repeat Step 6 until all products added. All products are automatically assigned to their corresponding smart collection/s.
 
 ***NOT considering internet connection speed***, with *1,000 new products* with *20 new categories*, the number of API calls will be:
