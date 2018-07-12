@@ -16,14 +16,14 @@ Since the rate of using the Shopify API is 2 calls/second, I'd come up with this
 7. Repeat 6 until all products added. All product are automatically assigned to their corresponding smart collection.
 
 So, with 1000 new products with 20 new categories (assume perfect internet connection), the number of API calls will be:
-Getting the shop info			        1
-Getting all smart collections		  1
-Adding new smart collections	   20
-Adding new products            1,000
-Setting all inventory items    1,000*
+Getting the shop info - 1 API call
+Getting all smart collections  - 1 API call
+Adding new smart collections - 20 API calls
+Adding new products - 1,000 API call
+Setting all inventory items - 1,000 API call
 
 Total calls: 2,022 API calls
 Duration (2 API calls/sec): 1,011 seconds
 All 1000 products will be imported roughly within 17 minutes.
 
-*See https://help.shopify.com/en/api/reference/products/product_variant
+*"After August 1st, apps will no longer be able to set inventory using `inventory_quantity` or `inventory_quantity_adjustment`." (See https://help.shopify.com/en/api/reference/products/product_variant. Retrieved 2018-07-12)
