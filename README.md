@@ -20,10 +20,10 @@ Getting the shop info - 1 API call<br />
 Getting all smart collections  - 1 API call<br />
 Adding new smart collections - 20 API calls<br />
 Adding new products - 1,000 API call<br />
-Setting all inventory items - 1,000 API call<br />
+Setting all inventory items - 1,000* API call<br />
 <br /><br />
 Total calls: 2,022 API calls<br />
 Duration (2 API calls/sec): 1,011 seconds<br />
 All 1000 products will be imported roughly within 17 minutes.<br />
 
-*"After August 1st, apps will no longer be able to set inventory using `inventory_quantity` or `inventory_quantity_adjustment`." (See https://help.shopify.com/en/api/reference/products/product_variant. Retrieved 2018-07-12)
+* "After August 1st, apps will no longer be able to set inventory using `inventory_quantity` or `inventory_quantity_adjustment`." (See https://help.shopify.com/en/api/reference/products/product_variant. Retrieved 2018-07-12)
