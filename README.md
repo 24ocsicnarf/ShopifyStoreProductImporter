@@ -1,5 +1,5 @@
 # ShopifyStoreProductImporter
-This is one of the entries for one of the contests in freelancer.com
+This is one of the entries for a contest in freelancer.com
 
 Since the rate of using the Shopify API is 2 calls/second, I'd come up with this solution on how to import the products in the fastest way possible:
 1. Get the shop info to get the primary location Id. (Used 1 API call)
