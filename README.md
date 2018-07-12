@@ -1,5 +1,5 @@
 # Shopify Store Product Importer
-This is one of the entries for a contest in freelancer.com.
+This is **one of the entries** for a **contest in freelancer.com**.
 
 [ShopifySharp](https://github.com/nozzlegear/ShopifySharp)</b> was used to create this console application.
 
