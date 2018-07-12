@@ -3,7 +3,7 @@ This is **one of the entries** for a **contest in freelancer.com**.
 
 [ShopifySharp](https://github.com/nozzlegear/ShopifySharp)</b> was used to create this console application.
 
-Since the rate of using the Shopify API is 2 calls/second (for free account), I'd come up with this solution on how to import the products in the fastest way possible:
+Since the rate of using the Shopify API for *free account* is **2 calls/second**, I'd come up with this solution on how to import the products in the fastest way possible:
 1. Get the shop info to get the primary location id. (*used __1 API call__*)
 2. Select all distinct categories from the database.
 3. Get all smart collections on the Shopify store. (*used __1 API call for every 250 items__*)
