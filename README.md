@@ -25,7 +25,7 @@ Getting the shop info | 1
 Getting all smart collections | 1
 Adding new smart collections | 20
 Adding new products | 1,000
-Setting all inventory item* | 1,000
+Setting all inventory items* | 1,000
 **Total** | **2,022**
 
 **Duration: 1,011 seconds**  
