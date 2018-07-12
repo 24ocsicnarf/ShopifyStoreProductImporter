@@ -17,7 +17,7 @@ Since the rate of using the Shopify API for *free account* is **2 calls/second**
     5. Assign the new product image and the new product variant to the new product.  
     6. Add the new product to the Shopify store (*used 1 API call for every product added*).  
     7. Set the new inventory item, and assign the product item quantity, shop primary location id, and product variant inventory item id. (*used 1 API call for every inventory item set*).  
-    8. Insert the added product into the separated table of the database. (I assume this process means that the product is already imported to the Shopify store)
+    8. Insert the added product into the separated table of the database. (I assume this process means that the product is already imported into the Shopify store)
 7. Repeat Step 6 until all products added. All products are automatically assigned to their corresponding smart collection/s.
 
 ***NOT considering internet connection speed***, with *1,000 new products* with *20 new categories*, the number of API calls will be:
